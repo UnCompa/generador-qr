@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de QR</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4997/4997543.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"
+    ></script>
+    <script type="module" src="/main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Genera tu codigo QR</h1>
+      <input id="txt" type="text" />
+      <div class="btns">
+        <button id="btn">Enviar</button>
+        <button id="btnImg">Con imagen</button>
+        <button id="descargar">Descargar</button>
+      </div>
+      <div id="divImg" style="display: none">
+        <label class="lblFile" id="lblFile" for="file">Buscar imagen...</label>
+        <input
+          class="lblFile"
+          style="display: none"
+          type="file"
+          name=""
+          id="file"
+        />
+        <button id="upload" disabled>Subir imagen</button>
+      </div>
+      <div id="canvas"></div>
+    </div>
+  </body>
+</html>
